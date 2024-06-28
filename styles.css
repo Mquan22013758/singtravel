@@ -1,0 +1,379 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img small,
+strong,
+b,
+u,
+i,
+ol,
+ul,
+li,
+footer,
+header,
+section,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 10;
+
+}
+
+.wraper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    gap: 30px;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video-bg video {
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.header-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    text-transform: uppercase;
+    z-index: 100;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #fff;
+}
+
+
+.main-logo {
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.main-logo a {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/test/GBTB_grey_landscape_logo.png) no-repeat center center;
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+}
+
+.main-menu ul {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.main-menu ul li a {
+    color: #000;
+    font-family: gotham-medium !important;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.main-menu ul li a:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.2s all linear;
+}
+
+.cauchuyen {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.title-cauchuyen {
+    display: flex;
+    gap: 100px;
+}
+
+.title-cauchuyen h1 {
+    font-size: 60px;
+    width: 1400px;
+    display: block;
+}
+
+.title-cauchuyen p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 50px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    height: 350%;
+}
+
+.img1 {
+    width: 75%;
+    height: 100%;
+}
+
+.text-top p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.map {
+    background-color: #268278;
+    color: #fff;
+    padding: 50px 150px;
+    font-size: 19px;
+}
+
+.text-map {
+    display: flex;
+    gap: 60px;
+    font-size: 19px;
+}
+
+.text-map h2 {
+    font-size: 60px;
+    width: 400px;
+}
+
+.vinh {
+    padding: 20px 0;
+    line-height: 1.3;
+}
+
+.vinh h3 {
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-slide .img-top {
+    display: flex;
+    gap: 20px;
+    height: 550px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-slide .img-top .imgone {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/kingfisher-wetlands/2-kfw2-1920x1080.jpg) no-repeat center center;
+    width: 35%;
+    background-size: cover;
+    position: relative;
+}
+
+.container-slide .img-top .imgbg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.imgone p {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-slide .img-top .imgtwo {
+    width: 65%;
+
+}
+
+.imgtwo1 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imgtwo1 .img-left {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/cloud-forest/main/cloud-forest-night-main.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 250px;
+}
+.imgtwo1 .img-right {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/floral-fantasy/main/floral-fantasy-main.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 250px;
+}
+.imgtwo2 {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/flower-dome/main/flower-dome-main.jpg);
+    margin-bottom: 20px;
+    background-size: cover;
+    position: relative;
+    height: 280px;
+
+}
+.p-bg {
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.img-bottom {
+    display: flex; 
+    gap: 20px;
+}
+.bottom1 {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/supertree-observatory/main/supertree-observatory-main.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    width: 65%;
+    height: 250px;
+}
+.bottom2 {  
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/attractions/supertree-observatory/main/supertree-observatory-main.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    width: 35%;
+    height: 250px;
+}
+.bottom2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.benvung {
+    background: url(https://www.gardensbythebay.com.sg/content/dam/gbb-2021/image/things-to-do/banners/susnew-full-width-banner-1920x600.jpg) no-repeat center center;;
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+.benvung-text {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: auto;
+    background: #00000081;
+    color: #fff;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 18px;
+}
+.benvung-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.benvung button {
+    position: relative;
+    border-radius: 4px;
+    padding: 12px 24px;
+    min-width: 200px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-color: #530f66;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 10px;
+}
+.benvung button a {
+    color: #fff;
+}
+.service {
+    background-color: #530f66 ;
+    color: #fff;
+    padding: 30px 180px ;
+}
